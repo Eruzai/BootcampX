@@ -4,6 +4,6 @@ SELECT
   cohorts.name AS cohort_name,
   cohorts.start_date AS cohort_start_date
 FROM students
-JOIN cohorts ON cohort_id = cohorts.id
+  JOIN cohorts ON cohort_id = cohorts.id
 WHERE students.start_date != cohorts.start_date
 ORDER BY cohorts.start_date;
